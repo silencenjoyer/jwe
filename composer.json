@@ -1,0 +1,35 @@
+{
+  "name": "silencenjoyer/jwe",
+  "type": "library",
+  "description": "PHP JWE encryptor.",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrii Gebrych",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silencenjoyer\\Jwe\\": "src"
+    },
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  },
+  "require": {
+    "php": "^7.4.0|^8.0.0",
+    "ext-openssl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.2",
+    "symfony/var-dumper": "^5.4",
+    "phpunit/phpunit": "^9.6"
+  },
+  "scripts": {
+    "test": "php vendor/bin/phpunit",
+    "phpstan": "php vendor/bin/phpstan"
+  }
+}
